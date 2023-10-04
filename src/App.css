@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.des{
+border: 1px solid #000;
+align-items: center;
+text-align: center;
+justify-content: center;
+display: flex;
+}
+.mob{
+display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-width:425px){
+  .des{
+    display: none;
+    }
+    .mob{
+      border: 1px solid #000;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.mobiletext{
+  color: red;
+  font-size: larger;
+  background-color: aliceblue;
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.desktoptext{
+  color: black;
+  font-size: larger;
+  background-color: aliceblue;
+  display: block;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:320px) and (max-width:425px) {
+  .mobiletext{
+    color: red;
+    font-size: larger;
+    background-color: aliceblue;
+    display: block;
+  }
+  
+  .desktoptext{
+    color: black;
+    font-size: larger;
+    background-color: aliceblue;
+    display: none;
+  } 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mobile1{
+color: green;
+display: none;
+}
+.desktop1{
+  color: red;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:320px) and (max-width:425px){
+  
+  .mobile1{
+    color: green;
+    margin: 50px 0px 0px 0px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    }
+    .desktop1{
+      color: red;
+      display: none;
+    }
+  
+}
+
+body.light{
+  background-color: aliceblue;
+  color: #000;
+}
+
+body.dark{
+  background-color:#000;
+  color:red;
 }

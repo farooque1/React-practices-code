@@ -1,0 +1,29 @@
+.mobile {
+    border: 0.5px solid;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    display: none;
+}
+
+.desktop {
+    height: 90vh;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+
+/* @media screen and (min-width:380px) and (max-width:420px) { */
+
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+}

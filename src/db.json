@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "farooque",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "farooque123",
+      "email": "test@gmail1212.com"
+    }
+  ]
+}
